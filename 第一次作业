@@ -1,0 +1,46 @@
+define true 1;
+define false 0;
+public void RegisterForm implements OracleUserDAO()
+{
+Form RegisterFrom1=new Form();
+UserDTO user=new UserDTO(String userAccount,String userPassword);
+userDao IUserDAO=new userDao()；
+boolean addUser(UserDTO user)
+{
+if(user.userAccount==userAccount&&user.userPassword==userPassword)
+return 1;
+else return 0;
+}
+}
+
+public void UserDTO (String userAccount,String userPassword)
+{
+setUserAccount(String userAccount)
+{
+this.userAccount=userAccount;
+}
+
+String getUserAccount()
+{
+return UserAccount;
+}
+
+setUserAccount(String userPassword)
+{
+this.userPassword=userPassword;
+}
+
+String getUserPassword()
+{
+return userPassword;
+}
+
+}
+interface OracleUserDAO extends IUserDAO
+{
+abstract addUser();
+}
+interface IUserDAO
+{
+abstract addUser();
+}
